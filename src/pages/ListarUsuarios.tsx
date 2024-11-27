@@ -57,23 +57,34 @@ export function ListarUsuarios() {
         </Table>
       </Card>
 
-      <Card className="relative flex w-3/5 p-8 mt-16">
-        <CardTitle>Que tal adicionar um novo usuário?</CardTitle>
-        <Button className="absolute top-6 right-6">
-          <Link to='/cadUser'>
-            Criar usuário
-          </Link>
-        </Button>
-      </Card>
+      <div className="flex flex-col justify-center w-full gap-5 item-center">
+        <Card className="relative flex self-center w-3/5 p-8 mt-16">
+          <CardTitle>Que tal adicionar um novo usuário?</CardTitle>
+          <Button className="absolute top-6 right-6">
+            <Link to='/cadUser'>
+              Criar usuário
+            </Link>
+          </Button>
+        </Card>
 
-      <Card className="relative flex w-3/5 p-8 mt-8">
-        <CardTitle>Tem novidades no estoque!</CardTitle>
-        <Button className="absolute top-6 right-6">
-          <Link to='/listarProdutos'>
-            Conferir lista
-          </Link>
-        </Button>
-      </Card>
+        <Card className="relative flex self-center w-3/5 p-8 mt-8">
+          <CardTitle>Tem novidades no estoque!</CardTitle>
+          <Button className="absolute top-6 right-6">
+            <Link to='/listarProdutos'>
+              Conferir lista
+            </Link>
+          </Button>
+        </Card>
+
+        <Card className="relative flex self-center w-3/5 p-8 mt-8">
+          <CardTitle>Consultar painel de vendas</CardTitle>
+          <Button className="absolute top-6 right-6">
+            <Link to='/listAllOrders'>
+              Consultar
+            </Link>
+          </Button>
+        </Card>
+      </div>
     </div>
   )
 }

@@ -1,7 +1,9 @@
 import { AtualizarProduto } from "@/pages/AtualizarProduto";
 import { AtualizarUsario } from "@/pages/AtualizarUsuario";
+import { CadastrarPedido } from "@/pages/CadastrarPedido";
 import { CadastrarProduto } from "@/pages/CadastrarProduto";
 import { Cadastrar } from "@/pages/Cadastro";
+import { ListarPedidos } from "@/pages/ListarPedidos";
 import { ListarProdutos } from "@/pages/ListarProdutos";
 import { ListarUsuarios } from "@/pages/ListarUsuarios";
 // import { Login } from "@/pages/Login";
@@ -36,5 +38,13 @@ export const router = createBrowserRouter([
   {
     path: '/editarProduct/:id',
     element: <AtualizarProduto />
+  },
+  {
+    path: '/listAllOrders',
+    element: <ListarPedidos />
+  },
+  {
+    path: '/cadOrder',
+    element: <CadastrarPedido />
   },
 ])
